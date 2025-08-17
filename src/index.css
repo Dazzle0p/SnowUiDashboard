@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: Inter, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+  color: #000000;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  color: #ffffff;
+  background-color: #2a2a2a;
+}
+
+@theme {
+  /* Accent Color */
+  --color-accent: #9f9ff8;
+
+  /* Text Colors – Light Theme */
+  --color-light-primary: #ffffff; /* 100% */
+  --color-light-secondary: #ffffffcc; /* 80% */
+  --color-light-tertiary: #ffffff66; /* 40% */
+  --color-light-muted: #ffffff33; /* 20% */
+  --color-light-soft: #ffffff26; /* 15% */
+  --color-light-faint: #0000001a; /* 10% */
+  --color-light-low: #ffffff0a; /* 4% */
+
+  /* Text Colors – Dark Theme */
+  --color-dark-primary: #000000; /* 100% */
+  --color-dark-secondary: #000000cc; /* 80% */
+  --color-dark-tertiary: #00000066; /* 40% */
+  --color-dark-muted: #00000033; /* 20% */
+  --color-dark-soft: #00000026; /* 15% */
+  --color-dark-faint: #0000001a; /* 10% */
+  --color-dark-low: #0000000a; /* 4% */
+
+  /* Background Colors */
+  --color-app-light: #ffffff;
+  --color-app-dark: #2a2a2a;
+  --color-panel-primary-light: #f9f9fa;
+  --color-panel-primary-dark: #ffffff0a;
+  --color-panel-secondary-light: #0000000a;
+  --color-panel-secondary-dark: #ffffff1a;
+
+  /* Status Colors */
+  --color-status-inprogress: #8a8cd9;
+  --color-status-complete: #94e9b8;
+  --color-status-pending: #92bfff;
+  --color-status-approved: #ffdb56;
+  --color-status-rejected: #ffffff66;
+
+  /* Font Sizes */
+  --text-tiny: 0.75rem; /* 12px */
+  --text-small: 0.875rem; /* 14px */
+  --text-regular: 1rem; /* 16px */
+  --text-heading: 1.125rem; /* 18px */
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-strong: 600;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem; /*  4px */
+  --spacing-sm: 0.5rem; /*  8px */
+  --spacing-compact: 0.625rem; /* 10px */
+  --spacing-narrow: 0.75rem; /* 12px */
+  --spacing-tight: 0.875rem; /* 14px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-cozy: 1.125rem; /* 18px */
+  --spacing-spaced: 1.25rem; /* 20px */
+  --spacing-roomy: 1.375rem; /* 22px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-loose: 1.625rem; /* 26px */
+  --spacing-xl: 1.75rem; /* 28px */
+
+  /* Border Radius */
+  --radius-small: 0.25rem; /* 4px */
+  --radius-regular: 0.5rem; /* 8px */
+  --radius-medium: 0.75rem; /* 12px */
+  --radius-large: 1rem; /* 16px */
+  --radius-xlarge: 1.5rem; /* 24px */
+  --radius-circle: 9999px; /* 100% */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  /* min-width: 320px; */
+  width: 100%;
+  min-height: 100vh;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
