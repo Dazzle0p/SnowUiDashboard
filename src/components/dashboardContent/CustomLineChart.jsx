@@ -61,10 +61,10 @@ const CustomDot = (props) => {
 
 const CustomLineChart = () => {
   return (
-    <div className="relative p-8 bg-gray-100 dark:bg-light-low rounded-2xl shadow-sm transition-colors">
+    <div className="relative p-2 sm:p-8 bg-gray-100 dark:bg-light-low rounded-2xl shadow-sm transition-colors">
       {/* Header */}
       <div className="flex items-center justify-between mb-8">
-        <div className="flex items-center space-x-8">
+        <div className="flex items-center flex-wrap space-x-8">
           <button className="text-sm font-medium pb-1 border-b-2 text-gray-900 dark:text-white border-gray-900 dark:border-white transition-colors">
             Total Users
           </button>

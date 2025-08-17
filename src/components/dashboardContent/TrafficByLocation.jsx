@@ -102,7 +102,7 @@ export default function TrafficByLocation({ resizing }) {
             {trafficsByLocation.map(
               ({ location, traffic, colorLight, colorDark }, i) => (
                 <div
-                  className="w-[184px] flex items-center justify-start"
+                  className="w-full sm:w-[148px] flex items-center justify-start"
                   key={i}
                 >
                   <span
@@ -111,7 +111,7 @@ export default function TrafficByLocation({ resizing }) {
                       background: isDark ? colorDark : colorLight,
                     }}
                   />
-                  <p className="text-xs leading-[18px] font-normal">
+                  <p className="text-xs leading-[18px] font-normal mr-2 sm:mr-0">
                     {location}
                   </p>
                   <p className="text-xs leading-[18px] font-normal ml-auto">
