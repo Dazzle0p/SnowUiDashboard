@@ -1,93 +1,109 @@
 # SnowUI Dashboard
 
-A responsive, user-friendly dashboard built with **React**, **TypeScript**, and **Tailwind CSS**, designed to showcase UI skills, API integration, reusable components, and interactivity.
-
-[Live Demo](https://snow-ui-dashboard.vercel.app/)
-[GitHub Repo](https://github.com/aehamdy/snowui-dashboard)
+SnowUI Dashboard is a modern and responsive admin dashboard template built with **React**, **TailwindCSS**, and **Vite**. It provides a clean and minimal interface for tracking analytics, user activities, and traffic data.
 
 ---
 
-## ✨ Features
+## Table of Contents
 
-- **Data fetching** from a live API (`https://scopey.onrender.com/api/session/sessions`)
-- **Search functionality** by client name
-- **Light/Dark mode toggle**
-- **Reusable components** like `SearchInput`, `SearchPanel`, `SearchResults`, `Icon`, and layout components
-- **Keyboard shortcut**: `Ctrl + K` opens the search panel
-- **Fully responsive** layout (mobile & desktop support)
-- Display of session data including:
-- User image
-- Client name
-- Date
-- Amount
-- Status (pulled from API)
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Dependencies](#dependencies)
 
 ---
 
-## Technologies Used
+## Features
 
-- **React** (with functional components and hooks)
-- **TypeScript** (static typing for reliability)
-- **Tailwind CSS** (for utility-first responsive styling)
-- **React Icons** (icon components)
-- **Vite** (for fast development build)
+- **Responsive Design**: Works seamlessly on desktop and mobile devices.
+- **Dark & Light Mode**: Supports theme switching.
+- **Analytics Cards**: Views, Visits, New Users, Active Users.
+- **Charts**:
+  - Total Users over time
+  - Traffic by Device
+  - Traffic by Location
+  - Traffic by Website
+- **Notifications & Activities Feed**
+- **Contacts Section**
+
+- Built using **React**, **TailwindCSS**, **Chart.js**, and **Recharts**.
 
 ---
 
-## Getting Started
+## Demo
 
-### 1. Clone the repository
+---
+
+## Installation
+
+1. Clone the repository:
 
 ```bash
-git clone https://github.com/aehamdy/snowui-dashboard.git
-cd SnowUI-Dashboard
+git clone https://github.com/Dazzle0p/SnowUiDashboard.git
+cd SnowUiDashboard
 ```
 
-### 2. Install dependencies
+## Install dependencies:
 
 npm install
 
-### 3. Create .env file
-
-touch .env
-Inside .env, add the following:
-VITE_API_URL=https://scopey.onrender.com/api/session/sessions
-
-### 4. Run the development server
+## Start the development server:
 
 npm run dev
+
 Open http://localhost:5173 in your browser.
 
-## Notes
+## Usage
 
-    The search panel can be opened either by clicking the search bar or pressing Ctrl + K.
+Navigate through different dashboards and pages using the sidebar.
 
-    Contexts are used to manage UI states like opening and closing the search panel.
+View analytics, traffic, and user activity in real-time.
 
-    The project uses utility-first CSS with consistent naming and design tokens.
+Track notifications and recent activities.
 
-    All statuses shown are fetched directly from the API (no fake generation needed).
+Customize charts and data sources as per your requirements.
 
-## Completed Requirements
+## Folder Structure
 
-Recreated the layout from Figma using React + Tailwind
+snowui-dashboard/
+├─ public/ # Static files and assets
+├─ src/
+│ ├─ components/
+│ ├─ constants/
+│ ├─ contexts/
+│ ├─ hooks/
+│ ├─ layout/
+│ ├─ utils/
+│ └─ main.jsx # App entry point
+├─ package.json
+├─ tailwind.config.js
+├─ vite.config.js
+└─ README.md
 
-Fetched and displayed data from a real API
+## Dependencies
 
-Implemented search functionality
+React: Front-end library for building UI.
 
-Used reusable components and clean structure
+TailwindCSS: Utility-first CSS framework for styling.
 
-Responsive on mobile and desktop
+Chart.js & react-chartjs-2: For line and bar charts.
 
-Added light/dark mode toggle
+Recharts: Additional charting library.
 
-Bonus: keyboard shortcut for search panel
+MUI X Charts: Advanced chart components.
 
-## Contact
+Lucide & React Icons: Icons for UI elements.
 
-Built with ❤️ by Ahmed Essam — GitHub: https://github.com/aehamdy
+Vite: Fast development build tool.
 
----
+## Scripts
 
-Let me know if you'd like to add badges (e.g. build passing, Vercel deployed), a license section, or contribution guidelines.
+npm run dev — Start development server.
+
+npm run build — Build production-ready files.
+
+npm run preview — Preview production build.
+
+npm run lint — Run ESLint to check code quality.
